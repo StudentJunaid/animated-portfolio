@@ -1,0 +1,25 @@
+.navbar{
+    height: 100px;
+}
+
+.wrapper{
+    width: 1060px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper span{
+    font-weight: bold;
+}
+
+.social{
+    display: flex;
+    gap: 15px;
+}
+
+.social a img{
+    width: 20px;
+    height: 20px;
+}
