@@ -1,23 +1,61 @@
 import React from 'react'
 import './Hero.css'
+import {motion} from 'framer-motion'
+const textVariants = {
+    initial: {
+      x: -500,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
+      },
+    },
+    scrollButton: {
+      opacity: 0,
+      y: 10,
+      transition: {
+        duration: 2,
+        repeat: Infinity,
+      },
+    },
+  };
+const sliderVariants = {
+    initial: {
+        x: 0,
+      },
+      animate: {
+        x: "-220%",
+        transition: {
+          repeat: Infinity,
+          repeatType:"mirror",
+          duration: 20,
+        },
+      },
+  };
+
+
 
 function Hero() {
   return (
     <div className='hero'>
        <div className="wrepper">
-        <div className="herotext">
-            <h2>HERVY TYLER</h2>
-            <h1>Web developer and UI designer</h1>
-            <div className="buttons">
-                <button>See the latest work</button>
-                <button className='gap'>Contact me</button>
-            </div>
-            <img src="./scroll.png" alt="" />
+        <motion.div variants={textVariants} initial="initial" animate="animate" className="herotext">
+            <motion.h2 variants={textVariants}>HERVY TYLER</motion.h2>
+            <motion.h1 variants={textVariants}>Web developer and UI designer</motion.h1>
+            <motion.div variants={textVariants} className="buttons">
+                <motion.button variants={textVariants}>See the latest work</motion.button>
+                <motion.button variants={textVariants} className='gap'>Contact me</motion.button>
+            </motion.div>
+            <img variants={textVariants} animate="scrollbutton" src="./scroll.png" alt="" />
+        </motion.div>
         </div>
-        </div>
-        <div className='slidingTextContainer'>
+        <motion.div className='slidingTextContainer' variants={sliderVariants} initial="initial" animate="animate">
             Writer Contant Creater Influincer
-        </div>
+        </motion.div>
         <div className="imageContainer">
            <img src="./hero.png" alt="" />
         </div>
