@@ -22,7 +22,8 @@ const variants = {
 
 function Services() {
   return (
-    <motion.div className='services'  variants={variants} initial="initial" whileInView="animate">
+   <div className="container">
+     <div className='services'  variants={variants} initial="initial">
         <motion.div className="textContainer" variants={variants}> 
             <p>i focus on helping your brand grow <br /> and more forword</p>
             <hr />
@@ -36,7 +37,7 @@ function Services() {
             <h1><motion.b whileHover={{color: "orange"}}>For Your </motion.b> Business</h1>
             <button>What we do?</button>
           </div>
-        </motion.div>
+        </motion.div> 
         <motion.div className="cardContainer" variants={variants}>
             <motion.div className="card" whileHover={{backgroundColor : "lightgrey" , color: "black"}}>
                 <h1>Branding</h1>
@@ -59,7 +60,8 @@ function Services() {
                 <button>Go</button>
             </motion.div>
         </motion.div>
-    </motion.div>
+    </div>
+   </div>
   )
 }
 

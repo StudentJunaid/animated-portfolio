@@ -12,3 +12,11 @@
     z-index: 999;
 }
 
+
+
+@media (max-width: 600px) {
+    .button{
+        width: 100px;
+        height: 100px;
+    }
+}

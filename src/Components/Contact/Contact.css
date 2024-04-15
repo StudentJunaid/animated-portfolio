@@ -1,0 +1,94 @@
+.Contact{
+    max-width: 1060px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin: 0 auto;
+}
+
+/* .textcontainerr{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+} */
+
+.text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formContainer{
+    flex: 1;
+    position: relative;
+}
+
+.text h1{
+    font-size: 70px;
+    line-height: 65px;
+}
+
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,textarea{
+    background: transparent;
+    border: none;
+    border: 1px solid grey;
+    padding: 10px;
+    resize: none;
+    border-radius: 8px;
+    color: white;
+}
+
+form button{
+    background-color: orange;
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.svgform{
+    z-index: -1;
+}
+
+.svgform .svgs{
+    z-index: -10;
+}
+
+.form{
+    z-index: 100;
+}
+
+.svgform svg{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+
+@media (max-width: 600px) {
+    .Contact{
+        flex-direction: column;
+        text-align: center;
+    }
+    .text h1{
+        font-size: 30px;
+    }
+
+    .text {
+        gap: 43px;
+    }
+
+    .formContainer {
+        width: 100%;
+        padding: 0 52px;
+    }
+}

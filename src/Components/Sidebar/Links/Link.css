@@ -12,3 +12,15 @@
 a{
     font-size: 40px;
 }
+
+
+
+@media (max-width: 600px) {
+    .links {
+        justify-content: start;
+        margin-top: 299px;
+    }
+    a{
+        font-size: 20px;
+    }
+}

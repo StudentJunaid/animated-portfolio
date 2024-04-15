@@ -1,10 +1,4 @@
-.services{
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(180deg, #0c0c1d, #111132);
-    display: flex;
-    flex-direction: column;
-}
+
 
 .textContainer{
     align-self: flex-end;
@@ -103,4 +97,79 @@
     border: none;
     cursor: pointer;
     border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+
+    .services{
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(180deg, #0c0c1d, #111132);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textContainer{
+        align-self: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .textContainer hr{
+        border: none;
+        border-top: 0.5px solid grey;
+        width: 150px;
+    }
+
+    .titleContainer{
+        flex-direction: column;
+    }
+
+    .title1 img{
+        width: 100px;
+    }
+
+    .title1 h1{
+        font-size: 30px;
+        font-weight: 100;
+     }
+
+     .title2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title2 h1{
+        font-size: 30px;
+     }
+
+     .title2 button{
+        width: 150px;
+        height: 60px;
+    } 
+   
+     .card button{
+        padding: 7px;
+        border-radius: 8px;
+        background: transparent;
+        color: orange;
+        border: 1px solid orange;
+    }
+    .cardContainer{
+        flex-direction: column;
+        margin: 20px ;
+        gap: 20px;
+    }
+
+    .card p{
+        display: none;
+        width: 220px;
+    }
+   
+    .cardContainer .card{
+        padding: 5px 50px;
+        border: none;
+    }
 }

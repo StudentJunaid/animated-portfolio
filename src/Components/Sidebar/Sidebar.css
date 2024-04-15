@@ -16,6 +16,11 @@
    background: white;
    z-index: 999;
 }
+@media (max-width: 600px) {
+    .bg{
+        width: 200px;
+     }
+}
 
 
 

@@ -23,3 +23,21 @@
     width: 20px;
     height: 20px;
 }
+
+@media (max-width: 600px) {
+   
+
+    .wrapper{
+        width: 100%;
+        justify-content: flex-end;
+        padding: 30px;
+    }
+    .social a img{
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+    .wrapper span{
+        display: none;
+    }
+}

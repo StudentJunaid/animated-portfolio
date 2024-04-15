@@ -67,4 +67,31 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
-  }
+}
+
+@media (max-width: 600px) {
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        height: calc(100vh - 100px);
+    }
+
+    .herotext{
+        margin-top: 150px;
+    }
+
+    .herotext h1{
+        font-size: 30px;
+    }
+
+    .imageContainer{
+        right: 55px;
+        width: 70%;
+    }
+
+    .slidingTextContainer {
+        font-size: 20vh;
+        top: 90px;
+        bottom: 0;
+    }
+}
