@@ -16,7 +16,7 @@ const App = () => {
       <Sidebar/>
       <Hero/>
     </section>
-    <section id='Services' ><Parallax type="services"/></section>
+    <section id='Services'><Parallax type="services"/></section>
     <section><Services/></section>
     <section id='portfolio' ><Parallax type="potfolio"/></section>
     <Portfolio/>

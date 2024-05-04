@@ -1,5 +1,3 @@
-
-
 .textContainer{
     align-self: flex-end;
      flex: 1;
@@ -22,10 +20,6 @@
     flex: 2;
 }
 
-.cardContainer{
-
-    flex: 2;
-}
 
 .title1{
     display: flex;
@@ -68,6 +62,8 @@
 } 
 
 .cardContainer{
+    gap: 20px;
+    flex: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,8 +72,11 @@
 }
 
 .cardContainer .card{
+    width: 350px;
+    height: 350px;
+    border-radius: 12px;
     border: 0.5px solid grey;
-    padding: 20px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,7 +113,7 @@
         text-align: center;
         flex-direction: column;
         gap: 10px;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .textContainer hr{
@@ -127,12 +126,17 @@
         flex-direction: column;
     }
 
+    .title1{
+        margin-top: 9px;
+    }
+
     .title1 img{
-        width: 100px;
+        width: 80px;
+        height: 40px;
     }
 
     .title1 h1{
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 100;
      }
 
@@ -142,12 +146,13 @@
     }
 
     .title2 h1{
-        font-size: 30px;
+        font-size: 20px;
+        margin-top: 7px;
      }
 
      .title2 button{
         width: 150px;
-        height: 60px;
+        height: 50px;
     } 
    
      .card button{
@@ -157,19 +162,38 @@
         color: orange;
         border: 1px solid orange;
     }
+
+    .card h1{
+        font-size: 22px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
     .cardContainer{
         flex-direction: column;
         margin: 20px ;
         gap: 20px;
     }
 
-    .card p{
+    .cardContainer  #lastCard{
         display: none;
+    }
+
+    .cardContainer  #second{
+        display: none;
+    }
+
+    .card p{
         width: 220px;
+        margin-bottom: 5px;
     }
    
     .cardContainer .card{
-        padding: 5px 50px;
-        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 10px 50px;
+        width: 350px;
+        height: 300px;
     }
 }

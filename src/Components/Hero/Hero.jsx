@@ -47,14 +47,14 @@ function Hero() {
             <motion.h2 variants={textVariants}>HERVY TYLER</motion.h2>
             <motion.h1 variants={textVariants}>Web developer and UI designer</motion.h1>
             <motion.div variants={textVariants} className="buttons">
-                <motion.button variants={textVariants}>See the latest work</motion.button>
-                <motion.button variants={textVariants} className='gap'>Contact me</motion.button>
+                <motion.button variants={textVariants}  >See the latest work</motion.button>
+                <motion.button variants={textVariants}   className='gap'>Contact me</motion.button>
             </motion.div>
             <img variants={textVariants} animate="scrollbutton" src="./scroll.png" alt="" />
         </motion.div>
         </div>
         <motion.div className='slidingTextContainer' variants={sliderVariants} initial="initial" animate="animate">
-            Writer Contant Creater Influincer
+            Front-end Developer 
         </motion.div>
         <div className="imageContainer">
            <img src="./hero.png" alt="" />

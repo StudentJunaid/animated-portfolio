@@ -40,6 +40,10 @@
     width: 100%;
 }
 
+.buttons{
+    cursor: pointer;
+}
+
 .buttons button{
     padding: 10px 20px;
     background: transparent;
@@ -77,15 +81,23 @@
     }
 
     .herotext{
-        margin-top: 150px;
+        margin-top: 182px;
     }
 
     .herotext h1{
         font-size: 30px;
     }
 
+    .herotext img{
+        margin: auto;
+    }
+
+    .imageContainer img{
+        width: 230px;
+    }
+
     .imageContainer{
-        right: 55px;
+        right: 36px;
         width: 70%;
     }
 

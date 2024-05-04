@@ -81,14 +81,20 @@ form button{
     }
     .text h1{
         font-size: 30px;
+        margin-top: 10px;
     }
 
     .text {
-        gap: 43px;
+        gap: 23px;
     }
 
     .formContainer {
         width: 100%;
         padding: 0 52px;
+    }
+
+    form button{
+        padding: 7px;
+        margin-bottom: 5px;
     }
 }

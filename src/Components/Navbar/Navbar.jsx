@@ -1,9 +1,9 @@
 import React from 'react'
 import './Navbar.css'
+import linkedin from '../../../public/linkedin.png'
 import facebook from '../../../public/facebook.png'
-import youtube from '../../../public/youtube.png'
 import instagram from '../../../public/instagram.png'
-import dribbble from '../../../public/dribbble.png'
+import github from '../../../public/github.png'
 import {motion} from 'framer-motion'
 
 function Navbar() {
@@ -17,10 +17,10 @@ function Navbar() {
         transition={{duration: 0.5}}
         >Junaid Noor</motion.span>
         <div className="social">
-            <a href=""><img src={facebook} alt="" /></a>
-            <a href=""><img src={youtube} alt="" /></a>
-            <a href=""><img src={instagram} alt="" /></a>
-            <a href=""><img src={dribbble} alt="" /></a>
+            <a href="https://github.com/StudentJunaid" target='__blank'><img src={github} alt="github" /></a>
+            <a href="https://www.linkedin.com/in/junaid-noor-65a91627b/" target='__blank'><img src={linkedin} alt="linkedin" /></a>
+            <a href="https://www.facebook.com/profile.php?id=100067578194664" target='__blank'><img src={facebook} alt="facebook" /></a>
+            <a href="https://www.instagram.com/opjerry1/" target='__blank'><img src={instagram} alt="instagram" /></a>
         </div>
        </div>
     </div>

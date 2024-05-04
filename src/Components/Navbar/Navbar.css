@@ -40,4 +40,9 @@
     .wrapper span{
         display: none;
     }
+
+    .social a img{
+        width: 20px;
+        height: 20px;
+    }
 }
