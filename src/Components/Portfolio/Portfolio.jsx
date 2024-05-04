@@ -53,7 +53,7 @@ const Single = ({ items }) => {
 
 
     return (<section>
-        <div className="container">
+        <div className="portfolio container">
             <div className="wrapperr">
                 <div className="imgContainer"  ref={ref}>
                     <a href={items.href} target={items.blank}><img src={items.img} alt="" /></a>

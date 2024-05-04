@@ -1,5 +1,4 @@
 import React from './Contact.css'
-import emailjs from '@emailjs/browser';
 import {motion} from 'framer-motion'
 import { useRef, useState } from 'react';
 const variants ={
@@ -21,28 +20,30 @@ const variants ={
 
 function Contact() {
 
-    const formref = useRef()
-    
-    const [error,setError] = useState(false)
-    const [success,setSuccess] = useState(false)
-    const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs
-          .sendForm('service_gdok5ii', 'template_8s0f333', form.current, {
-            publicKey: 'GQIq2OhB9bCNJ6hTD',
-          })
-          .then(
-            () => {
-                setSuccess(true)
-                console.log('SUCCESS!');
-            },
-            (error) => {
-                setError(true)
-              console.log('FAILED...', error.text);
-            },
-          );
-      };
+    const [result, setResult] = useState("");
+
+    const onSubmit = async (event) => {
+      event.preventDefault();
+      setResult("Sending....");
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", "128105e4-6e72-4a5c-bb27-3c98d02f7c90");
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    };
 
     return (
         <motion.div className='Contact' variants={variants} initial="initial" animate="animate">
@@ -64,16 +65,14 @@ function Contact() {
             <div className="formContainer">
           
                 <motion.form
-                className='form'
-                ref={formref}
-                onSubmit={sendEmail}> 
+                onSubmit={onSubmit}
+                className='form'> 
                     <input type="text" required placeholder='Name' name='name' />
                     <input type="email" required placeholder='Email' name='email' />
                     <textarea rows="10" name='message' placeholder='Message' />
                     <button>Submit</button>
-                    {error && "Error"}
-                    {success && "Success"}
                 </motion.form>
+                <span>{result}</span>
             </div>
         </motion.div>
     )

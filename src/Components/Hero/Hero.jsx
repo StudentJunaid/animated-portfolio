@@ -44,7 +44,7 @@ function Hero() {
     <div className='hero'>
        <div className="wrepper">
         <motion.div variants={textVariants} initial="initial" animate="animate" className="herotext">
-            <motion.h2 variants={textVariants}>HERVY TYLER</motion.h2>
+            <motion.h2 variants={textVariants}>Junaid Noor</motion.h2>
             <motion.h1 variants={textVariants}>Web developer and UI designer</motion.h1>
             <motion.div variants={textVariants} className="buttons">
                 <motion.button variants={textVariants}  >See the latest work</motion.button>

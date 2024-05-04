@@ -85,7 +85,8 @@
     }
 
     .textcontainer h2{
-        font-size: 40px;
+        font-size: 30px;
+        margin-top: 15px;
     }
     .textcontainer p{
         font-size: 19px;
@@ -97,4 +98,8 @@
         margin-top: 200px;
     }
     
+    .imgContainer img{
+        width: 279px;
+        margin-top: -6px;
+    }
 }
