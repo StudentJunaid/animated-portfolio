@@ -33,7 +33,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 40%;
+    width: 45%;
 }
 
 .imageContainer img{
@@ -93,12 +93,13 @@
     }
 
     .imageContainer img{
-        width: 230px;
+        width: 307px;
+        margin-top: -15px
     }
 
     .imageContainer{
         right: 36px;
-        width: 70%;
+        width: 75%;
     }
 
     .slidingTextContainer {

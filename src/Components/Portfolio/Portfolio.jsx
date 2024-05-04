@@ -33,7 +33,7 @@ const items = [
     },
     {
         id: 4,
-        title: "Html,css app",
+        title: "React.js with tailwind",
         img: project4,
         desc: "Introducing an innovative AI-powered React app, meticulously crafted with a strong emphasis on intuitive user interface design. Seamlessly blending cutting-edge AI capabilities with a sleek and user-friendly UI, this app delivers an exceptional user experience",
         href: "https://6635ff792788c4ce551f40c4--fluffy-strudel-bf7a2c.netlify.app/",
